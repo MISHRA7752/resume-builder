@@ -98,7 +98,7 @@ const Form = () => {
       name: nameRef.current?.value,
       address: addressRef.current?.value,
       email: emailRef.current?.value,
-      phone: phoneRef.current?.value,
+      phone: inputVal,
       skills: skillsAdded,
       experience:exp,
       education:edu,

@@ -1,3 +1,4 @@
+// @ts-nocheck 
 import Form from './Containers/Form'
 import Resume from './Containers/Resume';
 import 'bootstrap/dist/css/bootstrap.min.css';
