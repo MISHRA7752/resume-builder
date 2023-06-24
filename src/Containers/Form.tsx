@@ -56,8 +56,8 @@ const Form = () => {
     { id: 7, label: 'C++' }
   ]);
   function getEdu(college:any,cource:any){
-    if(college.length==0 || cource.length==0){
-        setMsg("entre all values");
+    if(college.length===0 || cource.length===0){
+        setMsg("Enter all values");
         setTimeout(()=>{
             setMsg('');
         },5000)
@@ -72,8 +72,8 @@ const Form = () => {
     
   }
   function getExp(company:any,field:any){
-    if(company.length==0 || field.length==0){
-        setMsg("entre all values");
+    if(company.length===0 || field.length===0){
+        setMsg("Enter all values");
         setTimeout(()=>{
             setMsg('');
         },5000)
@@ -91,7 +91,6 @@ const Form = () => {
   const nameRef = useRef<HTMLInputElement>(null);
   const addressRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
-  const phoneRef = useRef<HTMLInputElement>(null);
     const handleSubmit = (e: any) => {
     e.preventDefault();
     const obj = {
@@ -103,9 +102,9 @@ const Form = () => {
       experience:exp,
       education:edu,
     };
-    if(obj.name?.length==0 || obj.email?.length==0 || obj.phone?.length==0 || obj.address?.length==0  )
+    if(obj.name?.length===0 || obj.email?.length===0 || obj.phone?.length===0 || obj.address?.length===0  )
     {
-        setMsg("Entre  All Values");
+        setMsg("Enter  All Values");
         setTimeout(()=>{
             setMsg('');
         },5000)
@@ -125,7 +124,7 @@ const Form = () => {
         },5000)
         return; 
     }
-    if(skillsAdded.length==0){
+    if(skillsAdded.length===0){
       setMsg("Add Skils");
         setTimeout(()=>{
             setMsg('');

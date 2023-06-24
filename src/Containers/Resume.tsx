@@ -27,7 +27,7 @@ const Resume = () => {
     const navigate = useNavigate();
    const count = useSelector((state: any) => state); 
    useEffect(()=>{
-    if(count.phone.length==0){
+    if(count.phone.length===0){
       navigate('/')
       navigate(0)
     }
